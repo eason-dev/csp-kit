@@ -35,9 +35,9 @@
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit",
     "validate": "echo 'Data validation passed'",
-    "prepare": "npm run build",
-    "prepack": "npm run build && npm run validate",
-    "prepublishOnly": "npm run lint && npm run check-types",
+    "prepare": "pnpm run build",
+    "prepack": "pnpm run build && pnpm run validate",
+    "prepublishOnly": "pnpm run lint && pnpm run check-types",
     "publish:npm": "npm publish --provenance=false"
   },
   "keywords": [

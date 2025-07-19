@@ -24,9 +24,9 @@
     "check-types": "tsc --noEmit",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "prepare": "npm run build",
-    "prepack": "npm run build && npm run test -- --run",
-    "prepublishOnly": "npm run lint && npm run check-types"
+    "prepare": "pnpm run build",
+    "prepack": "pnpm run build && pnpm run test -- --run",
+    "prepublishOnly": "pnpm run lint && pnpm run check-types"
   },
   "keywords": [
     "csp",

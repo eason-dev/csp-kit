@@ -39,6 +39,8 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 10.12.4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -58,10 +60,11 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm changeset publish --no-git-tag
+          publish: pnpm exec changeset publish --no-git-tag
           title: 'chore: version packages'
           commit: 'chore: version packages'
           createGithubReleases: true
+          version: pnpm exec changeset version
         env:
           # Use PAT if available, otherwise fall back to GITHUB_TOKEN
           # PAT is required for creating pull requests

@@ -25,9 +25,9 @@
     "dev": "tsup --watch",
     "lint": "eslint . --max-warnings 0",
     "check-types": "echo 'CLI needs to be updated for new architecture' && exit 0",
-    "prepare": "npm run build",
-    "prepack": "npm run build",
-    "prepublishOnly": "npm run lint && npm run check-types"
+    "prepare": "pnpm run build",
+    "prepack": "pnpm run build",
+    "prepublishOnly": "pnpm run lint && pnpm run check-types"
   },
   "keywords": [
     "csp",
@@ -53,8 +53,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "provenance": true
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "@csp-kit/data": "workspace:*",
