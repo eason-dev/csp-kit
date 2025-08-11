@@ -30,7 +30,7 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^24.0.14",
-    "eslint": "^9.29.0",
+    "eslint": "^9.33.0",
     "typescript": "5.8.2"
   },
   "browserslist": {
