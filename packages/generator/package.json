@@ -63,7 +63,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^24.0.14",
+    "@types/node": "^24.4.0",
     "@vitest/coverage-v8": "^2.0.0",
     "eslint": "^9.29.0",
     "tsup": "^8.0.0",
